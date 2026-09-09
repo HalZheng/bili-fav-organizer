@@ -1,0 +1,57 @@
+# ─── Python 缓存与构建产物 ───
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ─── 测试/Lint 缓存 ───
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ─── IDE / 编辑器 ───
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── TRAE / 工具临时文件 ───
+.trae/
+.workbuddy/
+
+# ─── 输出数据（含视频数据、状态文件、备份，体积大且含个人信息）───
+output/
+
+# ─── 个人视频数据分析结果 ───
+archive/
+
+# ─── 敏感配置（含 SESSDATA / BILI_JCT 等登录凭证，模板见 bili_secrets.py.example）───
+bili_secrets.py
+
+# ─── 备份文件 ───
+*.bak
+*.bak_*
+
+# ─── 临时/调试/一次性脚本（迭代过程中的补充爬取与分析工具）───
+debug_api.py
+check_sort.py
+analyze_pending.py
+analyze_state.py
+supplement_crawl.py
+supplement_v2.py
+supplement_v3.py
+supplement_v4.py
+crawl_toview.py
+
+# ─── 其他临时文件 ───
+TODO.txt
+
+# ─── 操作系统 ───
+.DS_Store
+Thumbs.db
+desktop.ini

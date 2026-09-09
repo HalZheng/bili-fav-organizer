@@ -1,0 +1,4 @@
+httpx[http2]>=0.27
+rich>=13.0
+pandas>=2.0
+openpyxl>=3.1
