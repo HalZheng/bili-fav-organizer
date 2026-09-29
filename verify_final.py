@@ -143,9 +143,10 @@ async def main():
         "elapsed_sec": round(time.time() - t0, 1),
     }
     Path("output").mkdir(exist_ok=True)
-    Path("output/verify_final_20260908.json").write_text(
+    out_name = f"output/verify_final_{time.strftime('%Y%m%d')}.json"
+    Path(out_name).write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n[完成] 核查耗时 {report['elapsed_sec']}s，结果已存 output/verify_final_20260908.json")
+    print(f"\n[完成] 核查耗时 {report['elapsed_sec']}s，结果已存 {out_name}")
 
     await crawler.close()
 
